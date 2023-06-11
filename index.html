@@ -25,24 +25,23 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body class="text-center m-0 p-0" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true"
+<body class="text-center" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true"
   class="scrollspy-example-2" tabindex="0">
-  <header class="container-fluid vh-100 m-0 pt-1" id="header">
-    <span class="position-absolute end-0 translate-middle-x">
+  <header class="container-fluid vh-100 m-0" id="header">
+    <div class="position-absolute end-0 top-0 m-2">
       <select class="form-select bg-body bg-opacity-25" id="languageSelect" title="languageSelect">
         <option value="en" selected>EN</option>
         <option value="bg">BG</option>
       </select>
-    </span>
+    </div>
     <div class="overlay position-relative top-50 translate-middle-y">
       <h1 data-translate="name"></h1>
       <h3 data-translate="jobTitle"></h3>
     </div>
-    <a class="btn btn-caret border border-2 position-absolute translate-middle p-0" href="#profile"
+    <a class="btn btn-caret border border-2 position-absolute bottom-0 translate-middle p-0" href="#aboutMe"
       title="Go to about me">
       <span class="caret position-absolute translate-middle-x">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-caret-down"
@@ -62,18 +61,30 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navbar-nav flex-column rounded rounded-3 shadow" id="navbarContent">
-        <a class="nav-link" href="#profile" data-translate="aboutMe" title="About me"></a>
-        <a class="nav-link" href="#work" data-translate="workExperience" title="Work experience"></a>
-        <a class="nav-link" href="#education" data-translate="education" title="Education"></a>
-        <a class="nav-link" href="#skills" data-translate="skills" title="Skills"></a>
-        <a class="nav-link" href="#projects" data-translate="projects" title="Projects"></a>
-        <a class="nav-link" href="#contact" data-translate="contacts" title="Contacts"></a>
+        <a class="nav-link" href="#aboutMe" title="About me">
+          <p data-translate="aboutMe"></p>
+        </a>
+        <a class="nav-link" href="#work" title="Work experience">
+          <p data-translate="workExperience"></p>
+        </a>
+        <a class="nav-link" href="#education" title="Education">
+          <p data-translate="education"></p>
+        </a>
+        <a class="nav-link" href="#skills" title="Skills">
+          <p data-translate="skills"></p>
+        </a>
+        <a class="nav-link" href="#projects" title="Projects">
+          <p data-translate="projects"></p>
+        </a>
+        <a class="nav-link" href="#contact" title="Contacts">
+          <p data-translate="contacts"></p>
+        </a>
       </div>
     </div>
   </nav>
 
-  <!-- Profile -->
-  <div class="container-fluid" id="profile">
+  <!-- About me -->
+  <div class="container-fluid" id="aboutMe">
     <div class="row align-items-center justify-content-center">
       <div class="col-lg-7 col-md-10">
         <h2 data-translate="greeting"></h2>
