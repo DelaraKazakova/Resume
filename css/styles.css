@@ -2,7 +2,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   background: no-repeat center fixed url(../images/bg.jpg);
-  background-origin: border-box;
+  /* background-origin: border-box; */
   background-size: cover;
 }
 
@@ -11,12 +11,12 @@ li {
 }
 
 .container {
-  margin: 3% 0;
-  padding: 0;
+  margin: 3% auto;
 }
 
-.container-fluid:not(:first-of-type) {
-  padding: 10% 12%;
+.container-fluid {
+  padding: 7% 12%;
+  margin: 0;
 }
 
 .container-fluid:nth-child(even) {
@@ -32,24 +32,6 @@ li {
 .container-fluid:nth-child(odd):not(:first-child) {
   background-color: #F9F9F9;
   color: #a5cf49;
-}
-
-.vr {
-  opacity: 1;
-  width: 2px;
-}
-
-.vr>.bi {
-  position: relative;
-  top: -6%;
-  transform: translateX(-50%);
-}
-
-a:hover,
-a:focus {
-  background-color: #c8b7f0;
-  border: solid 2px #a5cf49;
-  border-radius: 10px;
 }
 
 h1,
@@ -75,8 +57,10 @@ header .overlay {
   color: #FAF4B7;
   background: radial-gradient(closest-side, #c8b7f0, transparent);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   padding: 10%;
 }
+
 
 .btn-caret {
   bottom: 3%;
@@ -98,7 +82,7 @@ header .overlay {
   top: 30%;
 }
 
-.navbar .active {
+.navbar .nav-link.active {
   background-color: #FAF4B7;
   color: #3f0f75 !important;
   font-weight: bold;
@@ -106,17 +90,46 @@ header .overlay {
   border-radius: 10px;
 }
 
-.nav-link {
+.navbar .nav-link {
   color: #3f0f75;
   width: 100%;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.card>.card-img-overlay>.btn {
+  background-color: #c8b7f0;
+  border: solid 2px #a5cf49;
+  border-radius: 10px;
 }
 
 .profile-pic {
   max-width: 18rem;
 }
 
-.card .card-img-overlay {
-  background-color: #f9f9f9b7;
+
+.vr {
+  width: 2px;
+  left: 33.5%;
+}
+
+.bi-dot {
+  position: absolute;
+  top: -12px;
+  left: -24px;
+}
+
+
+.card>.card-img-overlay {
+  background-color: #f9f9f9de;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 10%;
+}
+
+.card:hover>.card-img-overlay,
+.card:focus>.card-img-overlay {
+  opacity: 1;
 }
 
 /* animations */
@@ -155,7 +168,7 @@ header .overlay {
 }
 
 @media (max-width: 991px) {
-  .container-fluid:not(:first-of-type) {
+  .container-fluid {
     padding: 10%;
   }
 
@@ -175,35 +188,34 @@ header .overlay {
     font-size: 1rem;
   }
 
-  .container-fluid:not(:first-of-type) {
+  .container-fluid {
     padding: 10% 5%;
   }
 
   header .overlay {
-    padding: 20% 2%;
+    padding: 20% 0;
   }
 
   .text-end {
     text-align: left !important;
   }
 
-  .row {
-    position: relative;
-    padding-top: 10%;
-  }
-
   .vr {
-    position: absolute;
-    /* top: 1px; */
-    height: 100%;
+    left: 0;
   }
 
-  .vr>.bi {
-    top: -5%;
+  .bi-dot {
+    top: -85px;
   }
 
   td {
     width: 60%;
+  }
+}
+
+@media (max-width: 575px) {
+  .col-sm-12 {
+    min-width: 100%;
   }
 }
 
