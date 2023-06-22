@@ -60,8 +60,8 @@ header {
 header .overlay {
   color: #FAF4B7;
   background: radial-gradient(closest-side, #c8b7f0, transparent);
-  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   padding: 10%;
 }
 
