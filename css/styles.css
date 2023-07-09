@@ -53,7 +53,7 @@ a,
 }
 
 header {
-  background: url(../images/bg.jpg) no-repeat center scroll;
+  background: url(../images/bg.jpeg) no-repeat center scroll;
   background-size: cover;
 }
 
@@ -110,11 +110,6 @@ header .overlay {
   border-radius: 10px;
 }
 
-.profile-pic {
-  max-width: 18rem;
-}
-
-
 .vr {
   width: 2px;
   left: 33.5%;
@@ -126,7 +121,6 @@ header .overlay {
   left: -24px;
 }
 
-.card,
 .table {
   min-width: 17rem;
 }

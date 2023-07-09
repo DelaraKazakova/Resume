@@ -37,5 +37,11 @@
   "bg": "Bulgarian",
   "en": "English",
   "tr": "Turkish",
+  "project1": "A website design created using Bootstrap.",
+  "project2": "This is an EJS and MongoDB project.",
+  "project3": "This is a React app that can keep your notes.",
+  "project4": "Another website design created using Bootstrap",
+  "project5": "Currently working on the design on this website for a catering company.",
+  "callToAction": "Check it out",
   "getIT": "Get in touch"
 }
